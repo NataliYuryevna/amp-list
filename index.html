@@ -29,7 +29,9 @@ body{font-family: Lato;}blockquote{border-color: #b69e59;}div[submit-success] > 
   <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
   <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
   <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   
   
@@ -745,9 +747,11 @@ body{font-family: Lato;}blockquote{border-color: #b69e59;}div[submit-success] > 
     </div>
 </section>
 
-
-  
-  
+<amp-list layout="fixed-height" height="100" src="./amp-list.json" binding="no">
+    <template type="amp-mustache">
+      <div class="text" style="{{css}}">{{customHTML}}</div>
+    </template>
+  </amp-list>
 
 </body>
 </html>

@@ -29,9 +29,7 @@ body{font-family: Lato;}blockquote{border-color: #b69e59;}div[submit-success] > 
   <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
   <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
   <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-  <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
-  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   
   
@@ -746,12 +744,11 @@ body{font-family: Lato;}blockquote{border-color: #b69e59;}div[submit-success] > 
         </div>
     </div>
 </section>
-
-<amp-list layout="fixed-height" height="100" src="./amp-list.json" binding="no">
-    <template type="amp-mustache">
-      <div class="text" style="{{css}}">{{customHTML}}</div>
-    </template>
-  </amp-list>
+  
+<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+<amp-iframe id="sample-resizable-iframe" title="Resizable iframe example from 200x200 to 300x300 " width="150" height="150" sandbox="allow-scripts allow-same-origin" resizable frameborder="0" src="https://preview.amp.dev/static/samples/files/resizable-iframe.html">
+              <div overflow tabindex="0" role="button" aria-label="Show more">Click to show more</div>
+  </amp-iframe>
 
 </body>
 </html>

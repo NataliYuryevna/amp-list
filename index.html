@@ -38,14 +38,16 @@ body{font-family: Lato;}blockquote{border-color: #b69e59;}div[submit-success] > 
   <script async custom-element="amp-app-banner" src="https://cdn.ampproject.org/v0/amp-app-banner-0.1.js"></script>
 </head>
 <body>
-   <amp-app-banner layout="nodisplay" id="my-app-banner">
-    <amp-img src="https://cdn-images-1.medium.com/max/50/1*JLegdtjFMNgqHgnxdd04fg.png"
-      width="50"
-      height="43"
-      layout="fixed"></amp-img>
-    <div class="banner-text">Learn more in the app.</div>
-    <button open-button>View in app</button>
-  </amp-app-banner>
+   <div class="banner" style="height: 84px;">
+     <amp-app-banner id="my-app-banner" style="top:0;">
+      <amp-img src="https://cdn-images-1.medium.com/max/50/1*JLegdtjFMNgqHgnxdd04fg.png"
+        width="50"
+        height="43"
+        layout="fixed"></amp-img>
+      <div class="banner-text">Learn more in the app.</div>
+      <button open-button>View in app</button>
+    </amp-app-banner>
+   </div>
    <amp-sidebar id="sidebar" class="cid-rYMGaam61C" layout="nodisplay" side="right">
         <div class="builder-sidebar" id="builder-sidebar">
             <button on="tap:sidebar.close" class="close-sidebar">

@@ -33,12 +33,14 @@ body{font-family: Lato;}blockquote{border-color: #b69e59;}div[submit-success] > 
   <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-  
+  <script async custom-element="amp-app-banner" src="https://cdn.ampproject.org/v0/amp-app-banner-0.1.js"></script>
 </head>
 <body>
-   <div style="position:fixed; top: 0; left: 0;">
+   <amp-layout height="84px"></amp-layout>
+   <amp-app-banner id="my-banner" layout="nodisplay">
     <p class="mbr-text mbr-fonts-style display-5" style="margin: 0; display: inline-block;">This site is temporary</p><a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">Learn More</a>
-   </div>
+    <button open-button>Get the app</button>
+   </amp-app-banner>
    <amp-sidebar id="sidebar" class="cid-rYMGaam61C" layout="nodisplay" side="right">
         <div class="builder-sidebar" id="builder-sidebar">
             <button on="tap:sidebar.close" class="close-sidebar">
